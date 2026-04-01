@@ -1,0 +1,32 @@
+/* ─────────────────────────────────────────────────────────
+   Home.css — CineTEC Cinema Landing
+   Page-level styles only. Component styles are in their
+   respective CSS files.
+   ───────────────────────────────────────────────────────── */
+
+:root {
+  --nav-h: calc(56px + max(env(safe-area-inset-top, 0px), var(--ion-safe-area-top, 0px)));
+}
+
+/* Logo mark — shared across components */
+.logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: #dc2626;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 800;
+  border-radius: 5px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* Scroll spacing for sections with fixed navbar */
+#cartelera,
+#proximamente {
+  scroll-margin-top: var(--nav-h);
+}
+
