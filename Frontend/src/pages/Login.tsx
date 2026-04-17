@@ -1,6 +1,7 @@
 import { IonContent, IonPage } from '@ionic/react';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { loginAdmin } from '../services/adminServices';
 import './Login.css';
 
 const Login: React.FC = () => {
@@ -8,10 +9,15 @@ const Login: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    console.log('Login attempt:', { username, password });
-    alert('Funcionalidad de login pendiente de implementar');
-  };
+  const handleLogin = async () => {
+    const valido = await loginAdmin(username, password);
+    if (valido) {
+        alert('Login exitoso!');
+        history.push('/home');
+    } else {
+        alert('Correo o contraseña incorrectos');
+    }
+};
 
   return (
     <IonPage>
