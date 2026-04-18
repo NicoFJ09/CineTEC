@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CineTecServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+840eef12d4a5e715877d328f5ed947984d59d1d6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5cc1590e752032dfea527499eca50efca87f450")]
 [assembly: System.Reflection.AssemblyProductAttribute("CineTecServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CineTecServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

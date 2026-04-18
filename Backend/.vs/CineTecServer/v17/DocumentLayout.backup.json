@@ -58,8 +58,7 @@
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T23:31:19.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T23:31:19.005Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,8 @@
               "Title": "AdministradorLogic.cs",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Logic\\AdministradorLogic.cs",
               "RelativeDocumentMoniker": "Logic\\AdministradorLogic.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Logic\\AdministradorLogic.cs*",
-              "RelativeToolTip": "Logic\\AdministradorLogic.cs*",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Logic\\AdministradorLogic.cs",
+              "RelativeToolTip": "Logic\\AdministradorLogic.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T23:18:39.875Z",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "Data\\administradores.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-16T22:11:38.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T22:11:38.019Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "Models\\Administrador.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T21:43:47.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T21:43:47.981Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T03:33:13.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T03:33:13.316Z"
             }
           ]
         }

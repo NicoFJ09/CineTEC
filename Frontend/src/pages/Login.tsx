@@ -13,7 +13,7 @@ const Login: React.FC = () => {
     const valido = await loginAdmin(username, password);
     if (valido) {
         alert('Login exitoso!');
-        history.push('/home');
+        history.push('/admin');
     } else {
         alert('Correo o contraseña incorrectos');
     }

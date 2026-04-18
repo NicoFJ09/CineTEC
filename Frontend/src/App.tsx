@@ -3,6 +3,10 @@ import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Suspense, lazy } from 'react';
 import Home from './pages/Home';
+import AdminHome from './pages/AdminHome';
+import MovieManagement from './pages/MovieManagement';
+import TheatersManagement from './pages/TheatersManagement';
+import ScreeningManagement from './pages/ScreeningManagement';
 
 const INCLUDE_ADMIN = import.meta.env.VITE_INCLUDE_ADMIN === 'true';
 const Login = INCLUDE_ADMIN ? lazy(() => import('./pages/Login')) : null;
@@ -50,10 +54,22 @@ const App: React.FC = () => (
                 <Login />
               </Suspense>
             ) : (
-              <Redirect to="/home" />
+              <Redirect to="/admin" />
             )
           }
         />
+        <Route exact path="/admin">
+          <AdminHome />
+        </Route>
+        <Route exact path="/admin/movies">
+          <MovieManagement />
+        </Route>
+        <Route exact path="/admin/theaters">
+          <TheatersManagement />
+        </Route>
+        <Route exact path="/admin/screening">
+          <ScreeningManagement />
+        </Route>
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
