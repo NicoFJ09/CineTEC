@@ -3,11 +3,11 @@ using System.Text.Json;
 
 namespace CineTecServer.Logic
 {
-    public class AdministradorLogic
+    public class AdministradorService
     {
         private readonly string _filePath = "Data/administradores.json";
 
-        // Funcion SUPEF
+        // Funcion SUPER basica
         public bool ValidarLogin(string correo, string contrasena)
         {
             var json = File.ReadAllText(_filePath);

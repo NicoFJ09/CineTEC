@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Plaza Mayor",
+    "provincia": "San José",
+    "canton": "San José",
+    "distrito": "Carmen",
+    "cantidad_salas": 6,
+    "admin_id": "admin@gmail.com"
+  },
+  {
+    "nombre": "Heredia Mall",
+    "provincia": "Heredia",
+    "canton": "Heredia",
+    "distrito": "Heredia",
+    "cantidad_salas": 6,
+    "admin_id": "admin@gmail.com"
+  },
+  {
+    "nombre": "Alajuela Center",
+    "provincia": "Alajuela",
+    "canton": "Alajuela",
+    "distrito": "La Lima",
+    "cantidad_salas": 5,
+    "admin_id": "admin@gmail.com"
+  }
+]

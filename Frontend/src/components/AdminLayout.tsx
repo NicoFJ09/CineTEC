@@ -9,6 +9,9 @@ const AdminLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="admin-layout">
             <div className="sidebar">
                 <ul>
+                    <li onClick={() => history.push('/admin')}>
+                        Dashboard
+                    </li>
                     <li onClick={() => history.push('/admin/movies')}>
                         Cartelera
                     </li>
@@ -18,7 +21,7 @@ const AdminLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     <li onClick={() => history.push('/admin/screening')}>
                         Programación de proyecciones
                     </li>
-                    <li onClick={() => history.push('/admin/cotec23')}>
+                    <li>
                         Restricción CoTec-23
                     </li>
                 </ul>
@@ -27,6 +30,7 @@ const AdminLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 {children}
             </div>
         </div>
+
     );
 };
 

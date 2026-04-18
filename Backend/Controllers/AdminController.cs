@@ -9,7 +9,7 @@ namespace CineTecServer.Controllers
     [ApiController]
     public class AdminController: Controller
     {
-        private readonly AdministradorLogic _service = new AdministradorLogic();
+        private readonly AdministradorService _service = new AdministradorService();
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] Administrador admin)

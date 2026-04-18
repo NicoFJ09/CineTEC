@@ -35,6 +35,40 @@
           }
         }
       }
+    },
+    "/api/Cine/allcinemas": {
+      "get": {
+        "tags": [
+          "Cine"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cine/{nombre}": {
+      "get": {
+        "tags": [
+          "Cine"
+        ],
+        "parameters": [
+          {
+            "name": "nombre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

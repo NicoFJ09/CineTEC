@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonContent, IonPage } from '@ionic/react';
 import { useHistory } from 'react-router-dom';
-
+import AdminLayout from '../components/AdminLayout'; // sidebar
 
 const ScreeningManagement: React.FC = () => {
     const history = useHistory(); 
@@ -18,6 +18,10 @@ const ScreeningManagement: React.FC = () => {
                         </div>
                     </div>
                 </div>
+
+                <AdminLayout>
+                    <h1>Administración CineTEC</h1>
+                </AdminLayout>
 
             </IonContent>
         </IonPage>

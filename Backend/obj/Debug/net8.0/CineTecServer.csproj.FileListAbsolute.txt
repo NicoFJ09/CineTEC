@@ -35,3 +35,5 @@ C:\Users\gonza\Desktop\tareacorta\CineTEC\Backend\obj\Debug\net8.0\CineTecServer
 C:\Users\gonza\Desktop\tareacorta\CineTEC\Backend\obj\Debug\net8.0\CineTecServer.genruntimeconfig.cache
 C:\Users\gonza\Desktop\tareacorta\CineTEC\Backend\obj\Debug\net8.0\ref\CineTecServer.dll
 C:\Users\gonza\Desktop\tareacorta\CineTEC\Backend\bin\Debug\net8.0\Data\administradores.json
+C:\Users\gonza\Desktop\tareacorta\CineTEC\Backend\bin\Debug\net8.0\Data\cines.json
+C:\Users\gonza\Desktop\tareacorta\CineTEC\Backend\bin\Debug\net8.0\Data\salas.json

@@ -43,7 +43,7 @@ const AdminHome: React.FC = () => {
                                 <div style={{ backgroundColor: '#1a0a2e' }} className="card text-white p-4">
                                     <span className="material-icons">camera_indoor</span>
                                     <small className="text-secondary mt-2">Salas disponibles en todas las sucursales</small>
-                                    <h2 className="fw-bold mt-1">24</h2>
+                                    <h2 className="fw-bold mt-1">17</h2>
                                 </div>
                             </div>
                         </div>
