@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\CineTecServer.csproj": {}
+    "C:\\Users\\david\\CineTEC\\Backend\\CineTecServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\CineTecServer.csproj": {
+    "C:\\Users\\david\\CineTEC\\Backend\\CineTecServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\CineTecServer.csproj",
+        "projectUniqueName": "C:\\Users\\david\\CineTEC\\Backend\\CineTecServer.csproj",
         "projectName": "CineTecServer",
-        "projectPath": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\CineTecServer.csproj",
-        "packagesPath": "C:\\Users\\gonza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\obj\\",
+        "projectPath": "C:\\Users\\david\\CineTEC\\Backend\\CineTecServer.csproj",
+        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\david\\CineTEC\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gonza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
