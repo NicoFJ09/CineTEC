@@ -1,0 +1,9 @@
+.modal-input::placeholder {
+    color: #274788;
+}
+
+.modal-input {
+    background-color: #d8dde6 !important;
+    color: rgb(15, 14, 14) !important;
+    border: 1px solid #334155 !important;
+}
