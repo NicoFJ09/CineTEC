@@ -21,9 +21,6 @@ const AdminLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     <li onClick={() => history.push('/admin/screening')}>
                         Programación de proyecciones
                     </li>
-                    <li>
-                        Restricción CoTec-23
-                    </li>
                 </ul>
             </div>
             <div className="content">

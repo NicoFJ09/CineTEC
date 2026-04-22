@@ -16,7 +16,8 @@ namespace CineTecServer.Controllers
         public IActionResult ObtenerTodos()
         {
             var cines = _service.ObtenerTodos();
-            return Ok(cines);
+            var resumen = cines.Select(c => new { c.nombre, c.provincia });
+            return Ok(resumen);
         }
 
         // GET un valor - un cine por nombre
