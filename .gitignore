@@ -39,6 +39,14 @@ yarn-error.log*
 # Testing
 coverage/
 
+# .NET / Visual Studio build artifacts
+**/bin/
+**/obj/
+**/.vs/
+*.user
+*.suo
+*.cache
+
 # Misc
 *.log
 .eslintcache
