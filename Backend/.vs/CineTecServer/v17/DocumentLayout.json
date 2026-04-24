@@ -3,52 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\controllers\\cinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:controllers\\cinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\logic\\salasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:logic\\salasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\logic\\cineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:logic\\cineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\data\\administradores.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:data\\administradores.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\logic\\administradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:logic\\administradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\data\\cines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:data\\cines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\controllers\\cinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:controllers\\cinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\models\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:models\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\logic\\salasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:logic\\salasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\data\\cines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:data\\cines.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\data\\salas.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:data\\salas.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\logic\\administradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:logic\\administradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|c:\\users\\gonza\\desktop\\tareacorta\\cinetec\\backend\\data\\administradores.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD8765BD-D8FC-4ADC-A910-F533E46B621F}|CineTecServer.csproj|solutionrelative:data\\administradores.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,20 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-20T23:01:40.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -109,13 +96,13 @@
               "RelativeDocumentMoniker": "Controllers\\CineController.cs",
               "ToolTip": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Controllers\\CineController.cs",
               "RelativeToolTip": "Controllers\\CineController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwA4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwB0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-18T23:39:59.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "salas.json",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Data\\salas.json",
               "RelativeDocumentMoniker": "Data\\salas.json",
@@ -127,19 +114,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "SalasService.cs",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Logic\\SalasService.cs",
               "RelativeDocumentMoniker": "Logic\\SalasService.cs",
               "ToolTip": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Logic\\SalasService.cs",
               "RelativeToolTip": "Logic\\SalasService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T23:00:44.383Z"
+              "WhenOpened": "2026-04-18T23:00:44.383Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "CineService.cs",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Logic\\CineService.cs",
               "RelativeDocumentMoniker": "Logic\\CineService.cs",
@@ -151,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "cines.json",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Data\\cines.json",
               "RelativeDocumentMoniker": "Data\\cines.json",
@@ -163,7 +151,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-20T23:01:40.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -175,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "AdministradorService.cs",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Logic\\AdministradorService.cs",
               "RelativeDocumentMoniker": "Logic\\AdministradorService.cs",
@@ -187,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "administradores.json",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Data\\administradores.json",
               "RelativeDocumentMoniker": "Data\\administradores.json",
@@ -199,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -211,13 +211,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Sala.cs",
               "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Models\\Sala.cs",
               "RelativeDocumentMoniker": "Models\\Sala.cs",
               "ToolTip": "C:\\Users\\gonza\\Desktop\\tareacorta\\CineTEC\\Backend\\Models\\Sala.cs",
               "RelativeToolTip": "Models\\Sala.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-20T21:29:06.644Z"
             }

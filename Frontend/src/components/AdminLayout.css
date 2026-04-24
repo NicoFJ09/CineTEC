@@ -1,7 +1,7 @@
 .admin-layout {
     font-family: var(--bs-font-sans-serif);
     display: flex;
-    height: 80vh;
+    min-height: 80vh;  /* min en vez de height fijo */
 }
 
 .sidebar ul {
@@ -33,4 +33,5 @@
     padding: 20px;
     background-color: #eff0f0;
     color: #000000;
+    overflow-y: auto;  /* scroll interno */
 }

@@ -7,6 +7,8 @@ namespace CineTecServer.Logic
     public class SalasService
     {
         private readonly string _filePath = "Data/salas.json";
+        
+        // obtiene la informacion de todas las salas
         public List<Sala> ObtenerTodos()
         {
             var json = File.ReadAllText(_filePath);
@@ -23,7 +25,7 @@ namespace CineTecServer.Logic
             {
                 if (sala.cine_id.Equals(nombre, StringComparison.OrdinalIgnoreCase))
                 {
-                    salas_por_idcine.Add(sala);
+                    salas_por_idcine.Add(sala); // se añaden las salas que cumplen con la condicion
                 }
             }
             return salas_por_idcine;

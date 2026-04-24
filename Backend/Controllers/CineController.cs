@@ -11,13 +11,13 @@ namespace CineTecServer.Controllers
     {
         private readonly CineService _service = new CineService();
 
-        // GET multivalor - todos los cines
+        // GET multivalor da la info de nombre y provincia de todos los cines
         [HttpGet("allcinemas")]
         public IActionResult ObtenerTodos()
         {
             var cines = _service.ObtenerTodos();
             var resumen = cines.Select(c => new { c.nombre, c.provincia });
-            return Ok(resumen);
+            return Ok(resumen); // respuesta http que permite mandar los datos
         }
 
         // GET un valor - un cine por nombre
@@ -27,7 +27,7 @@ namespace CineTecServer.Controllers
             var cine = _service.ObtenerPorNombre(nombre);
             if (cine == null)
                 return NotFound(new { mensaje = "Cine no encontrado" });
-            return Ok(cine);
+            return Ok(cine); // respuesta http que permite mandar los datos
         }
     }
 }
