@@ -1,0 +1,59 @@
+/* ─────────────────────────────────────────────────────────
+   Login.css
+   ───────────────────────────────────────────────────────── */
+
+ion-content {
+  --background: #f8fafc;
+}
+
+.login-container {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+  background: #f8fafc;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 380px;
+}
+
+.logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #dc2626;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  border-radius: 8px;
+}
+
+/* Force Bootstrap input colors — Ionic dark mode can't touch these */
+.login-box .form-label {
+  color: #374151 !important;
+}
+
+.login-box .form-control {
+  color: #111827 !important;
+  background-color: #ffffff !important;
+  border-color: #d1d5db !important;
+}
+
+.login-box .form-control::placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+.login-box .form-control:focus {
+  border-color: #dc2626 !important;
+  box-shadow: 0 0 0 0.2rem rgba(220, 38, 38, 0.15) !important;
+}
+
+.login-box .text-muted {
+  color: #6b7280 !important;
+}

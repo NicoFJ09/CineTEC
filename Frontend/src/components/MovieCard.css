@@ -1,0 +1,44 @@
+/* ── MovieCard ─────────────────────────────────────────────── */
+.movie-card {
+  width: 160px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  overflow: hidden;
+  text-align: center;
+}
+
+.movie-poster {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movie-poster:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2) !important;
+}
+
+.movie-poster-upcoming {
+  opacity: 0.65;
+  cursor: default;
+}
+.movie-poster-upcoming:hover {
+  transform: none;
+  box-shadow: none !important;
+}
+
+.movie-card-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #111827 !important;
+  margin: 0 0 0.15rem;
+}
+
+.movie-card-genre {
+  font-size: 0.775rem;
+  color: #6b7280 !important;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 576px) {
+  .movie-card { width: 140px; }
+}

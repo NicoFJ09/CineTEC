@@ -1,0 +1,39 @@
+/* ── SedeSelector ──────────────────────────────────────────── */
+.sede-section {
+  background: #fff;
+  margin-top: calc(56px + max(env(safe-area-inset-top, 0px), var(--ion-safe-area-top, 0px)));
+}
+
+.sede-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827 !important;
+  margin-bottom: 1rem;
+}
+
+.sede-card {
+  cursor: pointer;
+  border: 1px solid #e5e7eb;
+  background: #ffffff !important;
+  color: #111827 !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+}
+.sede-card:hover {
+  border-color: #94a3b8 !important;
+}
+.sede-selected {
+  border-color: #dc2626 !important;
+  box-shadow: 0 0 0 1px #dc2626;
+}
+
+.sede-name {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #111827 !important;
+}
+
+.sede-meta {
+  font-size: 0.8rem;
+  color: #6b7280 !important;
+}
