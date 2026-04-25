@@ -1,7 +1,7 @@
 .admin-layout {
     font-family: var(--bs-font-sans-serif);
     display: flex;
-    min-height: 80vh;  /* min en vez de height fijo */
+    flex: 1;
 }
 
 .sidebar ul {

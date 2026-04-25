@@ -64,23 +64,12 @@ const TheatersManagement: React.FC = () => {
     return (
         <IonPage>
             <IonContent>
-                {/* header de la página */}
-                <div style={{ backgroundColor: '#0f172a' }} className="text-white py-4">
-                    <div className="container-xl d-flex align-items-center gap-3">
-                        <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9905419.jpg&sp=1777104328Tba032a9027dc967c887833560ddac6e4035b9cf1d047a3192087d80ea52c8e2a" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
-                        <div>
-                            <h1 className="fw-bold mb-0">Administración CineTEC</h1>
-                            <small className="text-secondary">Gestión Sucursales y Salas</small>
-                        </div>
-                    </div>
-                </div>
-
-                <AdminLayout>
-                    {/* contenedor principal de dos mitades con scroll independiente */}
-                    <div className="d-flex" style={{ height: 'calc(100vh - 130px)' }}>
+                <AdminLayout subtitle="Gestión de sucursales y salas">
+                    {/* contenedor principal de dos mitades */}
+                    <div className="d-flex" style={{ minHeight: '400px' }}>
 
                         {/* mitad izquierda — sucursales */}
-                        <div className="w-50 p-4 border-end border-secondary" style={{ overflowY: 'auto' }}>
+                        <div className="w-50 p-4 border-end border-secondary">
                             {/* título y botón nueva sucursal */}
                             <div className="d-flex justify-content-between align-items-center mb-3">
                                 <h4 className="text-black fw-bold">Sucursales</h4>
@@ -144,11 +133,11 @@ const TheatersManagement: React.FC = () => {
                         </div>
 
                         {/* mitad derecha — salas */}
-                        <div className="w-50 p-4" style={{ overflowY: 'auto' }}>
+                        <div className="w-50 p-4">
                             {/* título dinámico y botón nueva sala */}
                             <div className="d-flex justify-content-between align-items-center mb-3">
                                 <h4 className="text-black fw-bold">
-                                    {sucursalSeleccionada ? `Salas de ${sucursalSeleccionada.nombre}` : 'Seleccioná una sucursal'}
+                                    {sucursalSeleccionada ? `Salas de ${sucursalSeleccionada.nombre}` : 'Salas'}
                                 </h4>
                                 {sucursalSeleccionada && (
                                     <button className="btn btn-danger btn-sm" onClick={() => setMostrarformSala(true)}>
@@ -156,6 +145,14 @@ const TheatersManagement: React.FC = () => {
                                     </button>
                                 )}
                             </div>
+
+                            {/* placeholder cuando no hay sucursal seleccionada */}
+                            {!sucursalSeleccionada && (
+                                <div className="text-center text-secondary mt-5">
+                                    <span className="material-icons" style={{ fontSize: '3rem' }}>arrow_back</span>
+                                    <p className="mt-2">Seleccioná una sucursal para ver sus salas</p>
+                                </div>
+                            )}
 
                             {/* lista de salas filtradas */}
                             {salasDeSucursal.map(sala => (
@@ -354,18 +351,6 @@ const TheatersManagement: React.FC = () => {
                     </div>
                 )}
 
-                {/* footer */}
-                <footer className="bg-dark border-top border-white border-opacity-10 py-3">
-                    <div className="container-xl d-flex align-items-center justify-content-between flex-wrap gap-2">
-                        <div className="d-flex align-items-center gap-2 text-white fw-bold small">
-                            <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9905419.jpg&sp=1777104328Tba032a9027dc967c887833560ddac6e4035b9cf1d047a3192087d80ea52c8e2a" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
-                            CineTEC
-                        </div>
-                        <small className="text-secondary">
-                            Instituto Tecnológico de Costa Rica · CE3101 Bases de Datos · v1.0.0
-                        </small>
-                    </div>
-                </footer>
 
             </IonContent>
         </IonPage>

@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ onScrollTo }) => {
 
             {/* Brand */}
             <div className="nav-brand">
-              <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9905419.jpg&sp=1777104328Tba032a9027dc967c887833560ddac6e4035b9cf1d047a3192087d80ea52c8e2a" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }} />
+              <img src="/Monkey.png" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }} />
               <span className="nav-brand-name">CineTEC</span>
             </div>
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonPage, IonHeader, IonToolbar, IonTitle, IonButtons, IonBackButton, IonInput, IonItem, IonLabel, IonButton, IonList, IonNote } from '@ionic/react';
+import { IonContent, IonPage, IonHeader, IonToolbar, IonTitle, IonButtons, IonBackButton, IonItem, IonLabel, IonButton, IonList, IonNote } from '@ionic/react';
 import { useLocation, useHistory } from 'react-router-dom';
 
 // Muestra el resumen del carrito virtual del cliente, e implementa pago falso con tarjeta
@@ -76,35 +76,40 @@ const ClientPayment: React.FC = () => {
           </IonList>
 
           <h4 className="mb-3 px-3">Método de Pago</h4>
-          <IonList inset>
-            <IonItem>
-              <IonLabel position="floating">Número de Tarjeta</IonLabel>
-              <IonInput 
-                type="tel" 
-                placeholder="0000 0000 0000 0000" 
-                value={cardNumber} 
-                onIonChange={e => setCardNumber(e.detail.value!)} 
+          <div className="px-3">
+            <div className="mb-3">
+              <label className="form-label fw-semibold">Número de Tarjeta</label>
+              <input
+                type="tel"
+                className="form-control"
+                placeholder="0000 0000 0000 0000"
+                value={cardNumber}
+                onChange={e => setCardNumber(e.target.value)}
               />
-            </IonItem>
-            <IonItem>
-              <IonLabel position="floating">Fecha de Expiración</IonLabel>
-              <IonInput 
-                type="text" 
-                placeholder="MM/YY" 
-                value={expiry} 
-                onIonChange={e => setExpiry(e.detail.value!)} 
-              />
-            </IonItem>
-            <IonItem lines="none">
-              <IonLabel position="floating">CVV</IonLabel>
-              <IonInput 
-                type="password" 
-                placeholder="123" 
-                value={cvv} 
-                onIonChange={e => setCvV(e.detail.value!)} 
-              />
-            </IonItem>
-          </IonList>
+            </div>
+            <div className="row g-3">
+              <div className="col-7">
+                <label className="form-label fw-semibold">Fecha de Expiración</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="MM/YY"
+                  value={expiry}
+                  onChange={e => setExpiry(e.target.value)}
+                />
+              </div>
+              <div className="col-5">
+                <label className="form-label fw-semibold">CVV</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  placeholder="123"
+                  value={cvv}
+                  onChange={e => setCvV(e.target.value)}
+                />
+              </div>
+            </div>
+          </div>
 
           <div className="px-3 mt-4">
             <IonButton expand="block" color="success" size="large" onClick={handlePay}>

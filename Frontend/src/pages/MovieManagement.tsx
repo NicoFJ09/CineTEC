@@ -32,7 +32,7 @@ const INITIAL_MOVIES: MovieItem[] = [
         id: 1,
         nombreOriginal: 'Dune: Part Two',
         nombreComercial: 'Dune: Part Two',
-        imagen: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.CwXpQIVwcfJAYMWTsoKv-QHaK0%3Fpid%3DApi&sp=1777103908Td7cdd8f38a642d22e8e9297e03421d92dc46c63b6a87401aff69f7cb6f3dd251',
+        imagen: 'https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg',
         duracion: '166',
         protagonistas: 'Timothee Chalamet, Zendaya',
         director: 'Denis Villeneuve',
@@ -40,9 +40,9 @@ const INITIAL_MOVIES: MovieItem[] = [
     },
     {
         id: 2,
-        nombreOriginal: 'Inside Out 3',
-        nombreComercial: 'Inside Out 3',
-        imagen: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fimages.thedirect.com%2Fmedia%2Fphotos%2Finsideout1_PGIQ0OW.png&sp=1777104223T8931127d585630dae1e62e32ee19c8bb0f3150fde75e8cf81f38bbbeb3e1ee86',
+        nombreOriginal: 'Inside Out 2',
+        nombreComercial: 'Inside Out 2',
+        imagen: 'https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg',
         duracion: '97',
         protagonistas: 'Amy Poehler, Maya Hawke',
         director: 'Kelsey Mann',
@@ -149,17 +149,7 @@ const MovieManagement: React.FC = () => {
     return (
         <IonPage>
             <IonContent>
-                <div style={{ backgroundColor: '#0f172a' }} className="text-white py-4">
-                    <div className="container-xl d-flex align-items-center gap-3">
-                        <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9905419.jpg&sp=1777104328Tba032a9027dc967c887833560ddac6e4035b9cf1d047a3192087d80ea52c8e2a" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
-                        <div>
-                            <h1 className="fw-bold mb-0">Administración CineTEC</h1>
-                            <small className="text-secondary">Gestión de cartelera</small>
-                        </div>
-                    </div>
-                </div>
-
-                <AdminLayout>
+                <AdminLayout subtitle="Gestión de cartelera">
                     <div className="movie-admin-grid">
                         <section className="movie-card-shell">
                             <div className="movie-card-shell__head">

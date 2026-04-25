@@ -112,17 +112,7 @@ const ScreeningManagement: React.FC = () => {
     return (
         <IonPage>
             <IonContent>
-                <div style={{ backgroundColor: '#0f172a' }} className="text-white py-4">
-                    <div className="container-xl d-flex align-items-center gap-3">
-                        <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9905419.jpg&sp=1777104328Tba032a9027dc967c887833560ddac6e4035b9cf1d047a3192087d80ea52c8e2a" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
-                        <div>
-                            <h1 className="fw-bold mb-0">Administración CineTEC</h1>
-                            <small className="text-secondary">Programación de proyecciones</small>
-                        </div>
-                    </div>
-                </div>
-
-                <AdminLayout>
+                <AdminLayout subtitle="Programación de proyecciones">
                     <div className="screening-grid">
                         <section className="screening-card-shell">
                             <div className="screening-card-shell__head">

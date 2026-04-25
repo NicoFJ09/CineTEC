@@ -1,4 +1,4 @@
-const API_URL = "https://localhost:7071/api";
+const API_URL = "http://localhost:5178/api";
 
 export async function obtenerTodosCines() {
     const response = await fetch(`${API_URL}/cine/allcinemas`);

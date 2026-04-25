@@ -27,7 +27,7 @@ const Login: React.FC = () => {
             <div className="card-body p-4">
 
               <div className="text-center mb-4">
-                <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9905419.jpg&sp=1777104328Tba032a9027dc967c887833560ddac6e4035b9cf1d047a3192087d80ea52c8e2a" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
+                <img src="/Monkey.png" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
                 <h5 className="fw-bold mt-2 mb-0">CineTEC</h5>
                 <small className="text-muted">Panel de Administración</small>
               </div>

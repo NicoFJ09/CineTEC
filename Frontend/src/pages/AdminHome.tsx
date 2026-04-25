@@ -1,27 +1,14 @@
-import React, { useState } from 'react';
 import { IonContent, IonPage } from '@ionic/react';
-import { useHistory } from 'react-router-dom';
 import AdminLayout from '../components/AdminLayout'; // sidebar
 
 import './Adminhome.css';
 
 const AdminHome: React.FC = () => {
-    const history = useHistory(); 
 
     return (
         <IonPage>
             <IonContent>
-                <div style={{ backgroundColor: '#0f172a' }} className="text-white py-4">
-                    <div className="container-xl d-flex align-items-center gap-3">
-                        <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9905419.jpg&sp=1777104328Tba032a9027dc967c887833560ddac6e4035b9cf1d047a3192087d80ea52c8e2a" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
-                        <div>
-                            <h1 className="fw-bold mb-0">Administración CineTEC</h1>
-                            <small className="text-secondary"> Gestión del sistema</small>
-                        </div>
-                    </div>
-                </div>
-
-                <AdminLayout>
+                <AdminLayout subtitle="Gestión del sistema">
                     <div className="p-4">
                         {/* Fila 1 - 3 tarjetas iguales */}
                         <div className="row g-3 mb-3">
@@ -75,18 +62,6 @@ const AdminHome: React.FC = () => {
                     </div>
                 </AdminLayout>
 
-                {/* ── Footer ─────────────────────────────────────── */}
-                <footer className="bg-dark border-top border-white border-opacity-10 py-3">
-                <div className="container-xl d-flex align-items-center justify-content-between flex-wrap gap-2">
-                    <div className="d-flex align-items-center gap-2 text-white fw-bold small">
-                    <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9905419.jpg&sp=1777104328Tba032a9027dc967c887833560ddac6e4035b9cf1d047a3192087d80ea52c8e2a" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
-                    CineTEC
-                    </div>
-                    <small className="text-secondary">
-                    Instituto Tecnológico de Costa Rica · CE3101 Bases de Datos · v1.0.0
-                    </small>
-                </div>
-                </footer>
             </IonContent>
          </IonPage>
     );
