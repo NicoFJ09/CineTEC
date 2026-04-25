@@ -30,3 +30,12 @@
   scroll-margin-top: var(--nav-h);
 }
 
+/* Custom modal */
+ion-modal.custom-movie-modal {
+  --height: auto;
+  --width: 90%;
+  --max-width: 450px;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+

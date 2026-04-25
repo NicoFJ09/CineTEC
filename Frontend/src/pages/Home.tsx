@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import { IonContent, IonPage } from '@ionic/react';
+import { IonContent, IonPage, IonModal, IonButton, IonIcon } from '@ionic/react';
+import { closeCircleOutline } from 'ionicons/icons';
+import { useHistory } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import SedeSelector from '../components/SedeSelector';
 import MovieCarousel from '../components/MovieCarousel';
+import { Movie } from '../models';
 import './Home.css';
 
 /* ── Mock data (swap for API calls) ─────────────────────── */
@@ -31,9 +34,18 @@ const PROXIMAMENTE = [
 /* ── Component ───────────────────────────────────────────── */
 const Home: React.FC = () => {
   const [sedeId, setSedeId] = useState<number>(1);
+  const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
+  const history = useHistory();
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleProjections = () => {
+    if (selectedMovie) {
+      history.push(`/client/projections/${selectedMovie.id}`);
+      setSelectedMovie(null);
+    }
   };
 
   const sede = SEDES.find(s => s.id === sedeId)!;
@@ -56,6 +68,7 @@ const Home: React.FC = () => {
           movies={CARTELERA}
           variant="now"
           className="bg-light"
+          onSelectMovie={setSelectedMovie}
         />
 
         <MovieCarousel
@@ -81,6 +94,49 @@ const Home: React.FC = () => {
         </footer>
 
       </IonContent>
+
+      {/* Movie Info Modal */}
+      <IonModal 
+        isOpen={!!selectedMovie} 
+        onDidDismiss={() => setSelectedMovie(null)} 
+        className="custom-movie-modal"
+      >
+        <div className="p-4 bg-white text-dark" style={{ maxHeight: '90vh', overflowY: 'auto', borderRadius: '16px' }}>
+          {selectedMovie && (
+            <>
+              <div className="d-flex justify-content-between align-items-start mb-3">
+                <h3 className="mb-0 fw-bold">{selectedMovie.title}</h3>
+                <IonIcon 
+                  icon={closeCircleOutline} 
+                  size="large" 
+                  color="medium" 
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => setSelectedMovie(null)} 
+                />
+              </div>
+              
+              <div 
+                className="rounded mb-3" 
+                style={{ background: selectedMovie.color, height: '200px', width: '100%' }}
+              ></div>
+
+              <div className="d-flex gap-2 mb-3 flex-wrap">
+                <span className="badge bg-danger">{selectedMovie.genre}</span>
+                {selectedMovie.duration && <span className="badge bg-secondary">{selectedMovie.duration}</span>}
+                {selectedMovie.rating && <span className="badge bg-dark">{selectedMovie.rating}</span>}
+              </div>
+
+              <p className="text-muted" style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>
+                Esta es una sinopsis de prueba. {selectedMovie.title} es una de las opciones más esperadas en la cartelera actual, brindando una experiencia inmersiva con nuestra tecnología de proyección y un audio envolvente. ¡No te la pierdas!
+              </p>
+
+              <IonButton expand="block" color="danger" className="mt-4" onClick={handleProjections}>
+                Ver proyecciones
+              </IonButton>
+            </>
+          )}
+        </div>
+      </IonModal>
     </IonPage>
   );
 };
