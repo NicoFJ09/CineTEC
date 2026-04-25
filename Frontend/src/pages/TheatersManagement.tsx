@@ -1,12 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { IonContent, IonPage } from '@ionic/react';
-import { useHistory } from 'react-router-dom';
 import { obtenerTodosCines, obtenerCinePorNombre } from '../services/cineServices';
 import AdminLayout from '../components/AdminLayout';
 import './TheatersManagement.css'
 
+type Cine = {
+    nombre: string;
+    provincia: string;
+    canton: string;
+    distrito: string;
+    cantidad_salas: number;
+    admin_id: string;
+};
+
 // datos mock de salas
-const SALAS = [
+type Sala = {
+    id: string;
+    cant_filas: number;
+    cant_cols: number;
+    cine_id: string;
+};
+
+const SALAS: Sala[] = [
     { id: 'PMS1', cant_filas: 12, cant_cols: 13, cine_id: 'Plaza Mayor' },
     { id: 'PMS2', cant_filas: 10, cant_cols: 10, cine_id: 'Plaza Mayor' },
     { id: 'PMS3', cant_filas: 10, cant_cols: 13, cine_id: 'Plaza Mayor' },
@@ -27,16 +42,15 @@ const SALAS = [
 ]
 
 const TheatersManagement: React.FC = () => {
-    const history = useHistory();
 
     // cine seleccionado para ver sus salas
-    const [sucursalSeleccionada, setSucursalSeleccionada] = useState<any | null>(null);
+    const [sucursalSeleccionada, setSucursalSeleccionada] = useState<Cine | null>(null);
     // lista de cines del API
-    const [cines, setCines] = useState<any[]>([]);
+    const [cines, setCines] = useState<Cine[]>([]);
     // nombre del cine con info expandida
     const [cineExpandido, setCineExpandido] = useState<string | null>(null);
     // detalle completo del cine (viene del GET simple)
-    const [cineDetalle, setCineDetalle] = useState<any | null>(null);
+    const [cineDetalle, setCineDetalle] = useState<Cine | null>(null);
 
     // modal nueva sucursal
     const [mostrarModal, setMostrarModal] = useState(false);
@@ -44,9 +58,9 @@ const TheatersManagement: React.FC = () => {
     const [mostrarformSala, setMostrarformSala] = useState(false);
 
     // modal editar cine — guarda el cine que se está editando
-    const [cineEditando, setCineEditando] = useState<any | null>(null);
+    const [cineEditando, setCineEditando] = useState<Cine | null>(null);
     // modal editar sala — guarda la sala que se está editando
-    const [salaEditando, setSalaEditando] = useState<any | null>(null);
+    const [salaEditando, setSalaEditando] = useState<Sala | null>(null);
 
     // confirmación eliminar cine — guarda el nombre del cine a eliminar
     const [cineAEliminar, setCineAEliminar] = useState<string | null>(null);
@@ -58,7 +72,14 @@ const TheatersManagement: React.FC = () => {
 
     // carga los cines del API al abrir la página
     useEffect(() => {
-        obtenerTodosCines().then(data => setCines(data));
+        void (async () => {
+            try {
+                const data = await obtenerTodosCines();
+                setCines(data);
+            } catch {
+                setCines([]);
+            }
+        })();
     }, []);
 
     return (
@@ -78,7 +99,7 @@ const TheatersManagement: React.FC = () => {
 
                             {/* lista de cines del API */}
                             {cines.map(cine => (
-                                <div key={cine.nombre} className="p-3 mb-2 rounded" style={{ backgroundColor: '#1e293b' }}>
+                                <div key={cine.nombre} className="p-3 mb-2 rounded" style={{ backgroundColor: '#111827' }}>
                                     <div className="d-flex justify-content-between align-items-center">
                                         {/* nombre y provincia */}
                                         <div>
@@ -95,7 +116,14 @@ const TheatersManagement: React.FC = () => {
                                                         setCineDetalle(null);
                                                     } else {
                                                         setCineExpandido(cine.nombre);
-                                                        obtenerCinePorNombre(cine.nombre).then(data => setCineDetalle(data));
+                                                        void (async () => {
+                                                            try {
+                                                                const data = await obtenerCinePorNombre(cine.nombre);
+                                                                setCineDetalle(data);
+                                                            } catch {
+                                                                setCineDetalle(null);
+                                                            }
+                                                        })();
                                                     }
                                                 }}>
                                                 Ver info

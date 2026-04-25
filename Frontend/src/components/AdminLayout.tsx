@@ -8,12 +8,20 @@ const AdminLayout: React.FC<{ children: React.ReactNode; subtitle?: string }> = 
     return (
         <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
             <div style={{ backgroundColor: '#0f172a' }} className="text-white py-4">
-                <div className="container-xl d-flex align-items-center gap-3">
-                    <img src="/Monkey.png" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
-                    <div>
-                        <h1 className="fw-bold mb-0">Administración CineTEC</h1>
-                        <small className="text-secondary">{subtitle}</small>
+                <div className="container-xl d-flex align-items-center justify-content-between gap-3">
+                    <div className="d-flex align-items-center gap-3">
+                        <img src="/monkey.png" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
+                        <div>
+                            <h1 className="fw-bold mb-0">Administración CineTEC</h1>
+                            <small className="text-secondary">{subtitle}</small>
+                        </div>
                     </div>
+                    <button
+                        onClick={() => history.push('/')}
+                        className="btn btn-outline-light btn-sm"
+                    >
+                        Cerrar Sesión
+                    </button>
                 </div>
             </div>
 
@@ -42,7 +50,7 @@ const AdminLayout: React.FC<{ children: React.ReactNode; subtitle?: string }> = 
             <footer className="bg-dark border-top border-white border-opacity-10 py-3">
                 <div className="container-xl d-flex align-items-center justify-content-between flex-wrap gap-2">
                     <div className="d-flex align-items-center gap-2 text-white fw-bold small">
-                        <img src="/Monkey.png" alt="Logo" style={{ width: '24px', height: '24px', borderRadius: '50%', objectFit: 'cover' }} />
+                        <img src="/monkey.png" alt="Logo" style={{ width: '24px', height: '24px', borderRadius: '50%', objectFit: 'cover' }} />
                         CineTEC
                     </div>
                     <small className="text-secondary">

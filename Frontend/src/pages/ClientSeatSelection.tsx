@@ -49,11 +49,11 @@ const ClientSeatSelection: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent className="bg-light">
+      <IonContent style={{ '--background': '#ffffff', '--color': '#111827' }}>
         <div className="container-xl py-4 d-flex flex-column align-items-center">
           
           <div className="w-100 text-center mb-5">
-            <div className="bg-dark text-white py-1 rounded shadow-sm mx-auto" style={{ maxWidth: '300px' }}>
+            <div className="py-1 rounded shadow-sm mx-auto fw-bold" style={{ maxWidth: '300px', backgroundColor: '#dee2e6', color: '#111827', letterSpacing: '0.1em' }}>
               PANTALLA
             </div>
           </div>
@@ -61,7 +61,7 @@ const ClientSeatSelection: React.FC = () => {
           <div className="d-flex flex-column gap-3 overflow-auto w-100 align-items-center pb-4">
             {ROWS.map(row => (
               <div key={row} className="d-flex gap-2 align-items-center">
-                <span className="fw-bold" style={{ width: '20px' }}>{row}</span>
+                <span className="fw-bold" style={{ width: '20px', color: '#111827' }}>{row}</span>
                 {COLUMNS.map(col => {
                   const seatId = `${row}${col}`;
                   const isOccupied = OCCUPIED_SEATS.includes(seatId);
@@ -93,18 +93,18 @@ const ClientSeatSelection: React.FC = () => {
             ))}
           </div>
 
-          <div className="d-flex gap-4 mt-4 justify-content-center w-100 border-top pt-4">
+          <div className="d-flex gap-4 mt-4 justify-content-center w-100 pt-4" style={{ borderTop: '1px solid #dee2e6' }}>
             <div className="d-flex align-items-center gap-2">
-              <div style={{ width: 16, height: 16, backgroundColor: '#e0e0e0' }} className="rounded"></div>
-              <small>Disponible</small>
+              <div style={{ width: 16, height: 16, backgroundColor: '#e0e0e0', border: '1px solid #ccc' }} className="rounded"></div>
+              <small style={{ color: '#111827' }}>Disponible</small>
             </div>
             <div className="d-flex align-items-center gap-2">
               <div style={{ width: 16, height: 16, backgroundColor: '#dc3545' }} className="rounded"></div>
-              <small>Seleccionado</small>
+              <small style={{ color: '#111827' }}>Seleccionado</small>
             </div>
             <div className="d-flex align-items-center gap-2">
               <div style={{ width: 16, height: 16, backgroundColor: '#6c757d' }} className="rounded"></div>
-              <small>Ocupado</small>
+              <small style={{ color: '#111827' }}>Ocupado</small>
             </div>
           </div>
 

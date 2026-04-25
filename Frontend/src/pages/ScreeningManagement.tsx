@@ -62,7 +62,7 @@ const ScreeningManagement: React.FC = () => {
         [form.sucursal]
     );
 
-    const availableRooms = selectedBranch?.rooms ?? [];
+    const availableRooms = useMemo(() => selectedBranch?.rooms ?? [], [selectedBranch]);
 
     const selectedRoom = useMemo(
         () => availableRooms.find((room) => room.id === form.sala),

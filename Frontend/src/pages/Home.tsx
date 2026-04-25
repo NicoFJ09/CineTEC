@@ -38,11 +38,6 @@ const Home: React.FC = () => {
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
   const history = useHistory();
 
-  // Mueve la ventana hacia el contenedor de id seleccionado suavemente
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   // Cierra el modal y redirige a las proyecciones de la película actual
   const handleProjections = () => {
     if (selectedMovie) {
@@ -57,7 +52,7 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen scrollY style={{ '--background': '#ffffff' }}>
-        <Navbar onScrollTo={scrollTo} />
+        <Navbar />
 
         <SedeSelector 
           sedes={SEDES} 
@@ -89,7 +84,7 @@ const Home: React.FC = () => {
       <IonFooter className="bg-dark border-top border-white border-opacity-10 py-3">
         <div className="container-xl d-flex align-items-center justify-content-between flex-wrap gap-2">
           <div className="d-flex align-items-center gap-2 text-white fw-bold small">
-            <img src="/Monkey.png" alt="Logo" style={{ width: '24px', height: '24px', borderRadius: '50%', objectFit: 'cover' }} />
+            <img src="/monkey.png" alt="Logo" style={{ width: '24px', height: '24px', borderRadius: '50%', objectFit: 'cover' }} />
             CineTEC
           </div>
           <small className="text-secondary">

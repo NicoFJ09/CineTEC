@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonPage, IonHeader, IonToolbar, IonTitle, IonButtons, IonBackButton, IonItem, IonLabel, IonButton, IonList, IonNote } from '@ionic/react';
+import { IonContent, IonPage, IonHeader, IonToolbar, IonTitle, IonButtons, IonBackButton, IonButton } from '@ionic/react';
 import { useLocation, useHistory } from 'react-router-dom';
 
 // Muestra el resumen del carrito virtual del cliente, e implementa pago falso con tarjeta
@@ -40,70 +40,67 @@ const ClientPayment: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent className="bg-light">
-        <div className="container-xl py-4">
-          <h4 className="mb-3 px-3">Resumen de Compra</h4>
-          
-          <IonList inset className="mb-4">
-             <IonItem>
-                <IonLabel>
-                  <h2>Película de Prueba</h2>
-                  <p>Sala 1 (2D) - 14:00 hrs</p>
-                </IonLabel>
-             </IonItem>
-             <IonItem>
-                <IonLabel>
-                  <h2>Asientos seleccionados</h2>
-                  <p>{seats.join(', ') || 'Ninguno'}</p>
-                </IonLabel>
-             </IonItem>
-             <IonItem>
-                <IonLabel>
-                   Subtotal ({seats.length} x ₡{basePrice})
-                </IonLabel>
-                <IonNote slot="end" color="dark">₡{total.toLocaleString()}</IonNote>
-             </IonItem>
-             <IonItem>
-                <IonLabel>Impuestos (13%)</IonLabel>
-                <IonNote slot="end" color="dark">₡{taxes.toLocaleString()}</IonNote>
-             </IonItem>
-             <IonItem lines="none" className="bg-light">
-                <IonLabel className="fw-bold fs-5">TOTAL A PAGAR</IonLabel>
-                <IonLabel slot="end" color="danger" className="fw-bold text-end fs-5">
-                  ₡{(total + taxes).toLocaleString()}
-                </IonLabel>
-             </IonItem>
-          </IonList>
+      <IonContent style={{ '--background': '#ffffff', '--color': '#111827' }}>
+        <div className="container-xl py-4" style={{ color: '#111827', backgroundColor: '#ffffff' }}>
+          <h4 className="mb-3 px-3" style={{ color: '#111827' }}>Resumen de Compra</h4>
 
-          <h4 className="mb-3 px-3">Método de Pago</h4>
+          <div className="card border mx-3 mb-4" style={{ backgroundColor: '#111827', borderColor: '#334155' }}>
+            <div className="card-body p-0">
+              <div className="px-3 py-3 border-bottom" style={{ borderColor: '#334155' }}>
+                <div className="fw-semibold" style={{ color: '#f1f5f9' }}>Película de Prueba</div>
+                <div className="small" style={{ color: '#94a3b8' }}>Sala 1 (2D) · 14:00 hrs</div>
+              </div>
+              <div className="px-3 py-3 border-bottom" style={{ borderColor: '#334155' }}>
+                <div className="fw-semibold" style={{ color: '#f1f5f9' }}>Asientos seleccionados</div>
+                <div className="small" style={{ color: '#94a3b8' }}>{seats.join(', ') || 'Ninguno'}</div>
+              </div>
+              <div className="px-3 py-2 border-bottom d-flex justify-content-between align-items-center" style={{ borderColor: '#334155' }}>
+                <span style={{ color: '#cbd5e1' }}>Subtotal ({seats.length} × ₡{basePrice.toLocaleString()})</span>
+                <span style={{ color: '#f1f5f9' }}>₡{total.toLocaleString()}</span>
+              </div>
+              <div className="px-3 py-2 border-bottom d-flex justify-content-between align-items-center" style={{ borderColor: '#334155' }}>
+                <span style={{ color: '#cbd5e1' }}>Impuestos (13%)</span>
+                <span style={{ color: '#f1f5f9' }}>₡{taxes.toLocaleString()}</span>
+              </div>
+              <div className="px-3 py-3 d-flex justify-content-between align-items-center">
+                <span className="fw-bold fs-5" style={{ color: '#f1f5f9' }}>TOTAL A PAGAR</span>
+                <span className="fw-bold fs-5" style={{ color: '#f87171' }}>₡{(total + taxes).toLocaleString()}</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 className="mb-3 px-3" style={{ color: '#111827' }}>Método de Pago</h4>
           <div className="px-3">
             <div className="mb-3">
-              <label className="form-label fw-semibold">Número de Tarjeta</label>
+              <label className="form-label fw-semibold" style={{ color: '#111827' }}>Número de Tarjeta</label>
               <input
                 type="tel"
                 className="form-control"
                 placeholder="0000 0000 0000 0000"
+                style={{ color: '#111827', backgroundColor: '#ffffff' }}
                 value={cardNumber}
                 onChange={e => setCardNumber(e.target.value)}
               />
             </div>
             <div className="row g-3">
               <div className="col-7">
-                <label className="form-label fw-semibold">Fecha de Expiración</label>
+                <label className="form-label fw-semibold" style={{ color: '#111827' }}>Fecha de Expiración</label>
                 <input
                   type="text"
                   className="form-control"
                   placeholder="MM/YY"
+                  style={{ color: '#111827', backgroundColor: '#ffffff' }}
                   value={expiry}
                   onChange={e => setExpiry(e.target.value)}
                 />
               </div>
               <div className="col-5">
-                <label className="form-label fw-semibold">CVV</label>
+                <label className="form-label fw-semibold" style={{ color: '#111827' }}>CVV</label>
                 <input
                   type="password"
                   className="form-control"
                   placeholder="123"
+                  style={{ color: '#111827', backgroundColor: '#ffffff' }}
                   value={cvv}
                   onChange={e => setCvV(e.target.value)}
                 />
