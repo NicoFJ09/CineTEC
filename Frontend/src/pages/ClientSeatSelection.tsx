@@ -5,14 +5,17 @@ import { useParams, useHistory } from 'react-router-dom';
 /* Mock Data: 5 rows (A-E), 8 seats per row */
 const ROWS = ['A', 'B', 'C', 'D', 'E'];
 const COLUMNS = [1, 2, 3, 4, 5, 6, 7, 8];
+// Asientos predefinidos ocupados
 const OCCUPIED_SEATS = ['B3', 'B4', 'C5', 'D1', 'D2', 'E8']; // Just mock occupied ones
 
+// Pantalla para la selección de butacas o espacios
 const ClientSeatSelection: React.FC = () => {
   const { projectionId } = useParams<{ projectionId: string }>();
   const history = useHistory();
   const [selectedSeats, setSelectedSeats] = useState<string[]>([]);
   const [showToast, setShowToast] = useState(false);
 
+  // Cambia el estado interactivamente entre seleccionado o libre a un asiento particular
   const toggleSeat = (seatId: string) => {
     if (OCCUPIED_SEATS.includes(seatId)) return; // Can't select occupied
     
@@ -22,6 +25,7 @@ const ClientSeatSelection: React.FC = () => {
     });
   };
 
+  // Válida la interacción enviando los asientos via GET url form a la capa de pago
   const handleContinue = () => {
     if (selectedSeats.length === 0) {
       setShowToast(true);
@@ -32,6 +36,7 @@ const ClientSeatSelection: React.FC = () => {
     history.push(`/client/payment?proj=${projectionId}&seats=${selectedSeats.join(',')}`);
   };
 
+  // Componente que construye el grid de pantalla e inyexta botones mapeados
   return (
     <IonPage>
       <IonHeader>

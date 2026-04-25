@@ -13,7 +13,7 @@ const AdminHome: React.FC = () => {
             <IonContent>
                 <div style={{ backgroundColor: '#0f172a' }} className="text-white py-4">
                     <div className="container-xl d-flex align-items-center gap-3">
-                        <span className="logo-mark">C</span>
+                        <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9905419.jpg&sp=1777104328Tba032a9027dc967c887833560ddac6e4035b9cf1d047a3192087d80ea52c8e2a" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
                         <div>
                             <h1 className="fw-bold mb-0">Administración CineTEC</h1>
                             <small className="text-secondary"> Gestión del sistema</small>
@@ -79,7 +79,7 @@ const AdminHome: React.FC = () => {
                 <footer className="bg-dark border-top border-white border-opacity-10 py-3">
                 <div className="container-xl d-flex align-items-center justify-content-between flex-wrap gap-2">
                     <div className="d-flex align-items-center gap-2 text-white fw-bold small">
-                    <span className="logo-mark">C</span>
+                    <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9905419.jpg&sp=1777104328Tba032a9027dc967c887833560ddac6e4035b9cf1d047a3192087d80ea52c8e2a" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover', marginRight: '8px' }} />
                     CineTEC
                     </div>
                     <small className="text-secondary">

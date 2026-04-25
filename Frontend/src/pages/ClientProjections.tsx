@@ -8,6 +8,7 @@ const DAYS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', '
 
 type Projection = { id: number; time: string; room: string; availableSeats: number };
 
+// Diccionario de proyecciones configuradas según cada día de la semana
 const PROJECTIONS_BY_DAY: Record<string, Projection[]> = {
   'Lunes': [
     { id: 101, time: '14:00', room: 'Sala 1 (2D)', availableSeats: 45 },
@@ -41,17 +42,20 @@ const PROJECTIONS_BY_DAY: Record<string, Projection[]> = {
   ]
 };
 
+// Pantalla para ver proyecciones divididas por días una vez una película es elegida
 const ClientProjections: React.FC = () => {
   const { movieId } = useParams<{ movieId: string }>();
   const history = useHistory();
   const [selectedDay, setSelectedDay] = useState<string>('Lunes');
 
+  // Evento que navega al selector de asientos con el id correcto
   const handleSelectProjection = (projectionId: number) => {
     history.push(`/client/seats/${projectionId}`);
   };
 
   const projections = PROJECTIONS_BY_DAY[selectedDay] || [];
 
+  // Muestra el calendario horizontal y las funciones disponibles según selección
   return (
     <IonPage>
       <IonHeader>

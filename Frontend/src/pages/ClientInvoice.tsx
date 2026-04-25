@@ -3,11 +3,12 @@ import { IonContent, IonPage, IonHeader, IonToolbar, IonTitle, IonButton, IonIco
 import { useLocation, useHistory } from 'react-router-dom';
 import { printOutline, homeOutline, checkmarkCircle } from 'ionicons/icons';
 
+// Renderiza un boleto y resumen fiscal detallado con soporte para imprimir en PDF limpio
 const ClientInvoice: React.FC = () => {
   const history = useHistory();
   const location = useLocation();
 
-  // Parse parameters
+  // Extrae y procesa los datos finales de compra traidos por QueryString de cliente
   const searchParams = new URLSearchParams(location.search);
   const seatsParam = searchParams.get('seats');
   const projectionId = searchParams.get('proj');
@@ -15,20 +16,24 @@ const ClientInvoice: React.FC = () => {
   const date = new Date().toLocaleDateString();
   const time = new Date().toLocaleTimeString();
   
+  // Realiza los cálculos monetarios finales aplicables y asientos totales 
   const seats = seatsParam ? seatsParam.split(',') : [];
   const basePrice = 3500; // Mock base price
   const total = seats.length * basePrice;
   const taxes = total * 0.13; // 13% tax
   const finalTotal = total + taxes;
 
+  // Llama a la funcion estandar print html del navegador, aislada de CSS por media-print
   const handleDownloadPDF = () => {
     window.print();
   };
 
+  // Limpia el flujo y manda al usuario a interactuar a la pagina principal inicial
   const handleGoHome = () => {
     history.push('/home');
   };
 
+  // Muestra la interfaz final incluyendo titulos, comprobantes, calculos, y botones a home
   return (
     <IonPage>
       <IonHeader className="ion-no-border print-hide">

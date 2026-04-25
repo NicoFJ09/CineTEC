@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IonContent, IonPage, IonHeader, IonToolbar, IonTitle, IonButtons, IonBackButton, IonInput, IonItem, IonLabel, IonButton, IonList, IonNote } from '@ionic/react';
 import { useLocation, useHistory } from 'react-router-dom';
 
+// Muestra el resumen del carrito virtual del cliente, e implementa pago falso con tarjeta
 const ClientPayment: React.FC = () => {
   const history = useHistory();
   const location = useLocation();
@@ -9,21 +10,25 @@ const ClientPayment: React.FC = () => {
   const [expiry, setExpiry] = useState('');
   const [cvv, setCvV] = useState('');
 
-  // Parse parameters
+  // Parsea y recupera datos pasados en el query string de selecciones previas
   const searchParams = new URLSearchParams(location.search);
   const seatsParam = searchParams.get('seats');
   const projectionId = searchParams.get('proj');
   
   const seats = seatsParam ? seatsParam.split(',') : [];
+  
+  // Realiza los cálculos monetarios pertinentes a las compras fijas o dinamicas
   const basePrice = 3500; // Mock base price
   const total = seats.length * basePrice;
   const taxes = total * 0.13; // 13% tax
 
+  // Procesa y envía hacia la vista del ticket con una factura emulada
   const handlePay = () => {
     // Navigate to invoice, passing the same params
     history.push(`/client/invoice?proj=${projectionId}&seats=${seats.join(',')}`);
   };
 
+  // Muestra dos paneles, uno con detalles brutos de precios y otro formulario con pago
   return (
     <IonPage>
       <IonHeader>

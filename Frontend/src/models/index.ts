@@ -10,6 +10,7 @@ export interface Movie {
   title: string;
   genre: string;
   color: string;
+  image?: string;
   duration?: string;
   rating?: string;
   date?: string;
