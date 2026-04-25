@@ -7,6 +7,10 @@ import AdminHome from './pages/AdminHome';
 import MovieManagement from './pages/MovieManagement';
 import TheatersManagement from './pages/TheatersManagement';
 import ScreeningManagement from './pages/ScreeningManagement';
+import ClientProjections from './pages/ClientProjections';
+import ClientSeatSelection from './pages/ClientSeatSelection';
+import ClientPayment from './pages/ClientPayment';
+import ClientInvoice from './pages/ClientInvoice';
 
 const INCLUDE_ADMIN = import.meta.env.VITE_INCLUDE_ADMIN === 'true';
 const Login = INCLUDE_ADMIN ? lazy(() => import('./pages/Login')) : null;
@@ -44,6 +48,18 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         <Route exact path="/home">
           <Home />
+        </Route>
+        <Route exact path="/client/projections/:movieId">
+          <ClientProjections />
+        </Route>
+        <Route exact path="/client/seats/:projectionId">
+          <ClientSeatSelection />
+        </Route>
+        <Route exact path="/client/payment">
+          <ClientPayment />
+        </Route>
+        <Route exact path="/client/invoice">
+          <ClientInvoice />
         </Route>
         <Route
           exact

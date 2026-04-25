@@ -10,6 +10,7 @@ interface MovieCarouselProps {
   movies: Movie[];
   variant: 'now' | 'upcoming';
   className?: string;
+  onSelectMovie?: (movie: Movie) => void;
 }
 
 const MovieCarousel: React.FC<MovieCarouselProps> = ({
@@ -19,6 +20,7 @@ const MovieCarousel: React.FC<MovieCarouselProps> = ({
   movies,
   variant,
   className = '',
+  onSelectMovie,
 }) => {
   return (
     <section id={id} className={`movie-carousel-section ${className}`}>
@@ -29,7 +31,7 @@ const MovieCarousel: React.FC<MovieCarouselProps> = ({
         </div>
         <div className="carousel-scroll d-flex gap-3 pb-1">
           {movies.map(m => (
-            <MovieCard key={m.id} movie={m} variant={variant} />
+            <MovieCard key={m.id} movie={m} variant={variant} onClick={onSelectMovie} />
           ))}
         </div>
       </div>
