@@ -39,3 +39,21 @@ ion-modal.custom-movie-modal {
   --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
+/* Print CSS */
+@media print {
+  .print-hide, .print-hide.d-flex, .print-hide.text-center, .print-hide * {
+    display: none !important;
+  }
+  body, ion-app, ion-router-outlet, ion-page, ion-content {
+    background-color: white !important;
+    min-height: auto !important;
+  }
+  #invoice-content {
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+

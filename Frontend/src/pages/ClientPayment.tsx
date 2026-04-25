@@ -20,8 +20,8 @@ const ClientPayment: React.FC = () => {
   const taxes = total * 0.13; // 13% tax
 
   const handlePay = () => {
-    alert('¡Pago exitoso! Disfruta la función.');
-    history.push('/home'); // Return to home prototype
+    // Navigate to invoice, passing the same params
+    history.push(`/client/invoice?proj=${projectionId}&seats=${seats.join(',')}`);
   };
 
   return (

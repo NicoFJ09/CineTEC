@@ -10,6 +10,7 @@ import ScreeningManagement from './pages/ScreeningManagement';
 import ClientProjections from './pages/ClientProjections';
 import ClientSeatSelection from './pages/ClientSeatSelection';
 import ClientPayment from './pages/ClientPayment';
+import ClientInvoice from './pages/ClientInvoice';
 
 const INCLUDE_ADMIN = import.meta.env.VITE_INCLUDE_ADMIN === 'true';
 const Login = INCLUDE_ADMIN ? lazy(() => import('./pages/Login')) : null;
@@ -56,6 +57,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/client/payment">
           <ClientPayment />
+        </Route>
+        <Route exact path="/client/invoice">
+          <ClientInvoice />
         </Route>
         <Route
           exact
